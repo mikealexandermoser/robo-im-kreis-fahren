@@ -1,5 +1,4 @@
 DFRobotMaqueenPluss.I2CInit()
-DFRobotMaqueenPluss.PID(PID.OFF)
 basic.forever(function () {
     if (DFRobotMaqueenPluss.readPatrol(Patrol.L1) == 1 && DFRobotMaqueenPluss.readPatrol(Patrol.R1) == 1) {
         DFRobotMaqueenPluss.mototRun(Motors.ALL, Dir.CW, 70)
